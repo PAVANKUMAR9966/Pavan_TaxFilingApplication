@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pa1.css">
+</head>
+
+<body>
+
+    <div id="sectionhome">
+        <div class="bg1 d-flex justify-content-center flex-column">
+            <div class="text-center">
+                <h1 class="heading mb-3">Tax Filling Application</h1>
+                <p class="caption mb-4">Get Started </p>
+                <button class="custom-admin-button" onclick="display('sectionpage2')">Admin Login</button>
+                <button class="custom-user-button" onclick="display('sectionpage1')"> login/Signup</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionpage1">
+
+        <div class="page-login back">
+            <form class="login-form ">
+                <p class="login-text">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-lock fa-stack-1x"></i>
+                    </span>
+                </p>
+                <input type="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
+                <input type="password" class="login-password" required="true" placeholder="Password" />
+                <center><button class="btn btn-primary m-2" onclick="display('sectionpagehome1')"> Login</button></center>
+                <center><button class="btn btn-danger m-2" onclick="display('sectionregister')"> Signup</button></center>
+
+            </form>
+            <a href="#" class="login-forgot-pass">forgot password?</a>
+        </div>
+    </div>
+
+
+    <div id="sectionregister">
+        <div class="admin-page1">
+
+            <div class="container">
+                <div class="title">Registration</div>
+                <div class="content">
+                    <form action="#">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details abc1">Full Name</span>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details abc1">Username</span>
+                                <input type="text" placeholder="Enter your username" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details abc1">Email</span>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details abc1">Address </span>
+                                <input type="text" placeholder="Enter your Address" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details abc1">Occupation</span>
+                                <input type="text" placeholder="Enter your Occupation" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details abc1">Salary per Annum</span>
+                                <input type="text" placeholder="Enter your Salary per Annum" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details abc1">Phone Number</span>
+                                <input type="text" placeholder="Enter your number" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details abc1">Password</span>
+                                <input type="text" placeholder="Enter your password" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details abc1">Confirm Password</span>
+                                <input type="text" placeholder="Confirm your password" required>
+                            </div>
+                        </div>
+                        <div class="gender-details">
+                            <input type="radio" name="gender" id="dot-1">
+                            <input type="radio" name="gender" id="dot-2">
+                            <input type="radio" name="gender" id="dot-3">
+                            <span class="gender-title abc1">Gender</span>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="gender abc1">Male</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="gender abc1">Female</span>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot three"></span>
+                                    <span class="gender abc1">Prefer not to say</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </form>
+                    <center><button class="btn btn-primary" onclick="display('sectionpage1')">Register </button></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sectionpage2">
+        <div class="page-login back">
+
+            <form class="login-form ">
+                <p class="login-text">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-lock fa-stack-1x"></i>
+                    </span>
+                </p>
+                <h1 class="admin-head">Admin login</h1>
+                <input type="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
+                <input type="password" class="login-password" required="true" placeholder="Password" />
+                <center><button class="btn btn-primary m-2" onclick="display('sectionpagehome1')"> Login</button></center>
+
+            </form>
+            <a href="#" class="login-forgot-pass">forgot password?</a>
+        </div>
+
+    </div>
+
+
+    <div id="sectionpagehome1">
+
+        <div class="back">
+            <h1 class="omg">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                    <div class="container">
+                        <a class="navbar-brand" href="#sectionpagehome1">
+                            <img src="https://png.pngtree.com/png-vector/20190412/ourmid/pngtree-tax-file-document-icon-png-image_931941.jpg" class="logo" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto">
+                                <a class="nav-link active nav" href="#">
+                                    What is ITR??
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                                <a class="nav-link nav" href="#">Section 80C</a>
+                                <a class="nav-link nav" href="#">My taxes</a>
+                                <a class="nav-link nav" href="#">File My Taxes</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="info-section ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="info-heading">What is ITR?</h1>
+                                <p class="info-description">
+                                    Income Tax Return (ITR) is a form which a person is supposed to submit to the Income Tax Department of India. It contains information about the person’s income and the taxes to be paid on it during the year. Information filed in ITR should pertain to a particular financial year, i.e. starting on 1st April and ending on 31st March of the next year.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="info-card shadow p-3 mb-3">
+
+                                    <h1 class="info-card-title mt-3">Section 80C</h1>
+                                    <p class="info-card-description">
+                                        Section 80C provides deductions on various investments up to ₹ 1.5 lakh per year from your taxable income. In comparison, Section 80CCC provides a deduction of up to ₹ 1.5 lakh per annum for the contribution made by an individual towards specified pension funds. </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="info-card p-3 mb-3">
+
+                                    <h1 class="info-card-title mt-3">Types of ITR</h1>
+                                    <p class="info-card-description">
+                                        There are five ITR forms for individuals, namely, ITR 1, ITR 2, ITR 3, ITR-4S and ITR 5. There are five ITR forms for individuals, namely, ITR 1, ITR 2, ITR 3, ITR-4S and ITR 5.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <center><button class="btn btn-primary m-2" onclick="display('sectiontaxfile')"> File My Taxes</button></center>
+                    <br />
+                </div>
+
+            </h1>
+        </div>
+    </div>
+
+    <div id="sectiontaxfile">
+
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
